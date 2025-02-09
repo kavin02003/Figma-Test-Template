@@ -1,0 +1,855 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Kumbh Sans", serif;;
+}
+
+/* ............................................Navbar page.......................................... */
+
+/* Navbar Styling */
+.custom-navbar {
+    background-color: white;
+    padding: 20px 60px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-property{
+    padding-right:10px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.navbar-brand span {
+    color: #e74c3c; /* Red for "Property" */
+}
+
+.nav-link {
+    color: #3A4963;
+    font-size: 17px;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+/* Right Side Icons */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    border: 1px solid #777777;
+    padding:5px 10px;
+    border-radius:50px;
+    gap:10px;
+}
+
+.nav-icons .icon {
+    font-size: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+    color: #333;
+}
+
+.nav-icons .icon:hover {
+    color: #000;
+}
+
+.profile-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* ................................................Main-Home-Page............................................... */
+
+.Home-container{
+    background-color:#E9F4FF;
+    padding-top:10px;
+    position:absolute;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+    padding: 15px 15px;
+    border-radius: 20px;
+    border:1px solid #777777;
+    display: flex;
+    /* align-items: center; */
+    /* box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #888;
+}
+
+.search-bar input::placeholder {
+    color: #e74c3c;
+    font-weight: 600;
+    font-size:15px;
+}
+
+.search-bar i {
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:20px;
+    padding-bottom:50px; 
+    padding-left:70px;
+    padding-right:70px;
+}
+
+.hero-text {
+    max-width: 40%;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.hero-button {
+    margin-top: 80px;
+}
+
+.hero-button .btn {
+    background-color: #E65252;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 10px 60px;
+}
+
+.hero-button .btn:hover {
+    background-color: #c0392b;
+}
+
+/* Image Styling */
+.hero-image img {
+    position: relative;
+    right:1px;
+    top:120px;
+    width: 100%;
+    /* max-width: 350px; */
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        max-width: 250px;
+    }
+}
+
+
+/* ..........................................Investable-Score.................................................. */
+
+ /* Center Content */
+        .investible-section {
+            text-align: center;
+            /* padding: 50px; */
+            margin-top:700px;
+        }
+
+        /* Title Styling */
+        .investible-title {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size:35px;
+        }
+
+        /* Card Box */
+        .investible-box {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid #c7c5c5;
+            max-width: 800px;
+            height:280px;
+            margin: 40px auto;
+            text-align: left;
+            position: relative;
+        }
+
+        /* Text Content */
+        .investible-text {
+            font-size: 16px;
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+
+        /* Button Styling */
+        .investible-btn {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background:white; 
+            border: none;
+            transition: 0.3s;
+        }
+
+        /* Icon */
+        .investible-btn img {
+            font-size: 18px;
+        }
+
+
+    /* ...................................Hover-Page.....................................................     */
+
+    /* Title Styling */
+    .customer-card-title{
+        font-weight: bold;
+        color: #2c3e50;
+        font-size:35px;
+        text-align: center;
+        /* margin-top:120px; */
+    }
+
+    .customer-card-row{
+        margin-top:100px;
+    }
+
+    /* Card Styling */
+    .custom-card {
+        border: 2px solid #ddd;
+        border-radius: 12px;
+        padding: 25px;
+        text-align: left;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        height:220px;
+        flex-direction: column;
+        justify-content: center;
+        background: white;
+    }
+
+    /* Default Number Styling */
+    .custom-card h2 {
+        font-weight: bold;
+        color: #2c3e50;
+        font-size: 27px;
+        transition: color 0.3s ease-in-out;
+        margin-top:-10px;
+    }
+
+    /* Text Styling */
+    .custom-card p {
+        font-size: 16px;
+        color: #4a4a4a;
+        padding-top: 20px;
+        transition: color 0.3s ease-in-out;
+    }
+
+    /* Hover & Active Effect */
+    .custom-card:hover, .custom-card.active:hover {
+        border-color: #2ecc71;
+        transform: scale(1,1.05); /* Slightly expands */
+    }
+
+    .custom-card:hover h2 {
+        color: #2ecc71;
+
+    }
+
+    .custom-card:hover p {
+        color: #2ecc71;
+    }
+
+/* .................................................Graph-Page-1.............................................. */
+
+ /* Main Container */
+ .score-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    margin-top:50px;
+   
+}
+
+/* Chart Box */
+.chart-box {
+    border-radius: 10px;
+    padding:25px;
+    /* width:48%; */
+    border:1px solid #c7c5c5;
+    height:477px;
+}
+
+.info-image{
+    width:100%;
+    height:93%;
+}
+
+/* Right Info Panel */
+.info-panel {
+    width: 35%;
+    padding-left: 30px;
+}
+
+/* Title Styling */
+.info-topic {
+    font-weight:700;
+    color: #2c3e50;
+    font-size:30px;
+    padding-left:20px;
+}
+
+/* Info Cards */
+.info-card1 {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #c7c5c5;
+    margin-bottom: 15px;
+    margin-top:50px;
+    margin-left:20px;
+}
+.info-card2,.info-card3 {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #c7c5c5;
+    margin-top:15px;
+    margin-left:20px;
+}
+
+/* Text Styling */
+.info-text h5 {
+    margin: 0;
+    font-weight:500;
+    color: #2c3e50;
+    padding-left:10px;
+    font-size:20px;
+}
+
+.info-text p {
+    margin: 0;
+    font-size: 15px;
+    color: #6c757d;
+    padding-top:10px;
+    padding-left:10px;
+}
+
+/* Placeholder for Chart */
+.chart-placeholder {
+    width: 100%;
+    height: 350px;
+    background: url('your-chart-image.jpg') no-repeat center center;
+    background-size: contain;
+}
+
+
+/* ...........................................Graph-2 Page.................................................. */
+
+.main-graph-box-container{
+     margin-top:70px;
+}
+
+.main-graph-box {
+    border-radius: 20px;
+    padding-top:15px;
+    border: 1px solid #c7c5c5;
+    max-width: 1150px;
+    margin: 40px auto;
+    text-align: center;
+    font-size:15px;
+    font-weight:500;
+    color: #777777;
+}
+
+.graph-box-para1{
+    padding-left:40px;
+}
+
+.graph-box-para2{
+    padding-top:10px;
+}
+
+.graph-box-para5{
+    padding-right:40px;
+}
+
+.main-graph-box p:hover{
+   color: #E65252;
+   cursor:pointer;
+}
+
+.graph-box-2 {
+    border-radius: 15px;
+    padding:15px;
+    border: 1px solid #c7c5c5;
+    max-width: 1150px;
+    margin: -10px auto;
+}
+.graph-box-2 p {
+    border-radius: 15px;
+    padding:40px 10px 25px 35px;
+    max-width: 1150px;
+    margin: -10px auto;
+    font-size:15px;
+    font-weight:500;
+    color:#777777;
+}
+
+
+/* ..........................................Sub-Home-Page................................................... */
+
+ /* Pricing card */
+ .pricing-box {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.9), rgba(240, 249, 255, 1));
+    border-radius: 10px;
+    display: flex;
+    width: 90%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    height:490px; /* Adjust height as needed */
+    margin:75px;
+    background: url('./Contact images/Pexels Photo by Pixabay.png') no-repeat center center;
+    background-size: cover;
+    justify-content:end;
+    margin-top:100px;
+}
+
+.pricing-title{
+    padding-left:500px;
+    padding-top:60px;
+    color: white;
+}
+
+/* Right-side content */
+.pricing-details {
+    padding: 35px;
+    
+}
+
+/* Price text */
+.pricing-amount {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    padding-top:20px;
+}
+
+.text-muted{
+    color:white !important;
+}
+
+/* Feature list */
+.Features-list-item{
+    word-spacing:2px;
+    line-height:25px;
+    
+    color:white;
+    padding-top:10px;
+}
+
+.Feature-list{
+    display:flex;
+}
+
+/* Sample report button */
+.Features-list-image1{
+    padding-right:20px;
+    height:50%;
+    padding-top:15px;
+}
+.Features-list-image2{
+    padding-right:20px;
+    height:50%;
+    padding-top:10px;
+}
+.Features-list-image3{
+    padding-right:20px;
+    height:50%;
+    padding-top:20px;
+}
+.pricing-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 25px;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s;
+    margin-top:20px;
+}
+
+.pricing-btn:hover {
+    background-color: #c0392b;
+}
+
+/* ...........................................Slider-Page.................................................. */
+
+.Slider-container{
+    max-width:90%;
+    margin-left:70px;
+  }
+
+  .Slider-text{
+     font-size:35px !important;
+  }
+
+   .section-header {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin-bottom: 20px;
+   }
+
+   .section-header h2 {
+       font-size: 32px;
+       font-weight: bold;
+       color: #2c3e50;
+   }
+
+   .case-btn {
+       background-color: #E65252;
+       color: white;
+       border-radius: 6px;
+       padding: 10px 45px;
+       border: none;
+   }
+
+   .case-btn:hover {
+       background-color: #c0392b;
+   }
+
+   /* Card Styling */
+   .card {
+       border: none;
+       border-radius: 10px;
+       overflow: hidden;
+       /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+       border:1px solid #aeaeae;
+       transition: transform 0.3s ease-in-out;
+       padding:10px;
+   }
+
+   /* .card:hover {
+       transform: translateY(-5px);
+   } */
+
+   .card img {
+       height: 250px;
+       object-fit: cover;
+       width: 100%;
+       border-radius:10px;
+   }
+
+   .card-body {
+       padding: 15px;
+   }
+
+   .card-text {
+       color: #565353;
+       font-size: 20px;
+       font-weight:500;
+       padding-top:10px;
+       max-width:70%;
+   }
+
+   .card-footer {
+       background-color: white;
+       border-top: none;
+       display: flex;
+       justify-content: flex-end;
+   }
+
+   .arrow-btn {
+       background-color: #e74c3c;
+       color: white;
+       border-radius: 50%;
+       width: 40px;
+       height: 40px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       font-size: 18px;
+       text-decoration: none;
+   }
+
+   .arrow-btn:hover {
+       background-color: #c0392b;
+   }
+
+   /* Slider Controls */
+   .carousel-control-prev, .carousel-control-next {
+       width: 5%;
+   }
+
+   .carousel-control-prev-icon,
+   .carousel-control-next-icon {
+       background-color: #e74c3c;
+       border-radius: 50%;
+       padding: 10px;
+   }
+
+   .Slider-margin{
+       margin-top:50px;
+   }
+
+   .slider-underline{
+       border-top:1px solid #aeaeae;
+   }
+
+
+/* ...........................................Dropdown-page.................................................. */
+
+
+ /* Center align the content */
+ .faq-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom:100px;
+}
+
+/* Style for the heading */
+.faq-title {
+    font-size: 35px;
+    font-weight: bold;
+    color: #3A4963 !important;
+}
+
+/* Make accordion take proper width */
+.accordion {
+    width: 60%; /* Adjust width */
+    padding-top:10px;
+}
+
+.accordion-header{
+    padding-top:35px;
+}
+
+
+
+
+/* ...........................................Contact-Page.................................................. */
+
+
+/* General Styles */
+
+/* Footer Styling */
+.footer {
+    background-color: #1C2533;
+    color: #d1d5db;
+    padding: 40px 0;
+}
+
+.footer-company{
+    padding-left:50px;
+}
+
+/* Footer Branding */
+.footer-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f3f4f6;
+    display: flex;
+    align-items: center;
+}
+
+.footer-topic1 {
+    font-weight: bold;
+    font-size:17px;
+    color: #f3f4f6;
+    display: flex;
+    align-items: center;
+    padding-left:150px;
+}
+.footer-topic2 {
+    font-weight: bold;
+    font-size:17px;
+    color: #f3f4f6;
+    display: flex;
+    align-items: center;
+    padding-left:90px;
+}
+.footer-topic3 {
+    font-weight: bold;
+    font-size:17px;
+    color: #f3f4f6;
+    display: flex;
+    align-items: center;
+    padding-left:75px;
+}
+.footer-topic4 {
+    font-weight: bold;
+    font-size:17px;
+    color: #f3f4f6;
+    display: flex;
+    align-items: center;
+    padding-left:50px;
+}
+
+.footer-logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Footer Text */
+.footer-text {
+    font-size: 1rem;
+    margin-top:30px;
+    margin-right:40px; 
+    color:#9ca3af;
+}
+
+/* Footer Links */
+.footer-links, .footer-contact, .footer-social {
+    margin-top: 30px;
+}
+
+.footer-heading {
+    font-size:18px;
+    font-weight: bold;
+    color: #f3f4f6;
+}
+
+.footer-list {
+    padding: 0;
+}
+
+.footer-links{
+  padding-left:25px;
+  font-size:15px;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    display: block;
+    margin-top:15px;
+}
+
+.footer-link1{
+    margin-top:35px;
+}
+.footer-image{
+    padding-right:10px;
+}
+
+.footer-contact{
+    padding-left:60px;
+}
+
+.footer-contact-image{
+   padding-right:10px;
+}
+
+.footer-link:hover {
+    color: #f3f4f6;
+}
+
+/* Contact Info */
+.footer-contact-item {
+    font-size:15px;
+    margin-top: 15px;
+}
+
+.footer-contact-item1{
+    margin-top:30px;
+}
+
+/* Social Media Icons */
+.footer-social{
+   padding-left:50px;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top:30px;
+}
+
+.social-link {
+    font-size: 1.3rem;
+    color: #f3f4f6;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-link:hover {
+    color: #facc15;
+    transform: scale(1.2);
+}
+
+/* Footer Divider #374151 */
+.footer-divider {
+    border-top: 1px solid #9ca3af;  
+    margin-left:40px;
+    width:95%;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+}
+
+.footer-copyright {
+    margin-left:40px;
+    font-size:1rem;
+}
+
+.footer-policy {
+    text-align: right;
+}
+
+.footer-policy-link {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    font-size:1rem;
+    padding-right:35px;
+}
+
+.footer-policy-link:hover {
+    color: #f3f4f6;
+}
+
+.footer-copyright{
+    color: #9ca3af;
+    padding-top:10px;
+}
+
+
+
