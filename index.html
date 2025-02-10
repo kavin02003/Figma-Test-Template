@@ -53,13 +53,67 @@
     </div>
 </nav>
 
+
 <!-- .......................................Main-home-page................................................. -->
 
 <section class="Home-container">
-    <!-- Search Bar -->
-<div class="search-bar">
- <input type="text" placeholder="Where?  Search location">
- <i class="bi bi-search"></i>
+   
+    <div class="container py-5">
+        <!-- Search Box -->
+        <div class="search-box">
+            <!-- Text + Input Section -->
+            <div class="search-content">
+                <span class="search-label">Where?</span>
+                <input type="text" class="search-input" placeholder="Search location" id="searchInput">
+            </div>
+            <!-- Search Icon -->
+            <div id="iconContainer">
+                <i class="bi bi-search search-icon"></i>
+            </div>
+
+            <!-- Suggestions Dropdown -->
+            <div class="suggestions" id="suggestionsBox">
+                <div class="suggestion-item">Teacher’s Colony, HSR Sector 5, Bengaluru, Karnataka, India</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Property Details Box -->
+    <!-- Property Details Box -->
+<div class="property-container" id="propertyDetails">
+    <div class="property-details">
+        <!-- Left Column (Property Info) -->
+        <div class="property-info">
+            <h4>🏡 Teacher’s Colony</h4>
+            <p><i class="bi bi-house-door"></i> <strong>44 properties</strong></p>
+            <p><i class="bi bi-building"></i> <strong>Builder & Developer:</strong> Bangalore</p>
+            <p><i class="bi bi-bed"></i> 2BHK, 3BHK</p>
+            <p><i class="bi bi-currency-rupee"></i> 28.9 Lakh - 41.9 Lakh</p>
+        </div>
+
+        <!-- Right Column (Price Details) -->
+        <div class="price-details">
+            <h5><i class="bi bi-tags"></i> Price Details</h5>
+            <p>Price: ₹7500</p>
+            <p>Discount: (-) ₹750</p>
+            <p>GST (18%): (+) ₹1215</p>
+            <hr>
+            <h4><strong>Total: ₹7965</strong></h4>
+
+            <!-- Checkbox for Terms -->
+            <div class="checkbox-container">
+                <input type="checkbox" id="termsCheckbox">
+                <label for="termsCheckbox">Read & Accept the <a href="#">terms & conditions</a></label>
+            </div>
+
+            <!-- Pay Button -->
+            <button class="btn btn-success w-100" id="payButton" disabled>Pay ₹7965</button>
+
+            <p style="font-size: 12px; color: gray; margin-top: 10px;">
+                Stress testing report will be delivered to you within three working days at your registered email-id.
+            </p>
+        </div>
+    </div>
 </div>
 
 <!-- Hero Section -->
@@ -84,31 +138,32 @@
 <!-- ..........................................Investable-Score................................................ -->
 
 
-        <div class="investible-section">
+<div class="investible-section">
             
-            <!-- Title -->
-            <h2 class="investible-title">What is Investible Score?</h2>
+    <!-- Title -->
+    <h2 class="investible-title">What is Investible Score?</h2>
 
-            <!-- Description Box -->
-            <div class="investible-box">
-                <p class="investible-text">
-                    A higher score means higher return probabilities and less execution risk in the project. 
-                    The investable score measures the risk and return of the property. It measures current 
-                    price productivity, which means if it is fairly priced, under-priced, or an overpriced 
-                    property. And what are the property's prospects for growth and future price appreciation, 
-                    based on how the future infrastructure connectivity in the economy influences the property? 
-                    It also measures the execution risk in the property that represents the probabilities of 
-                    delay and defaults in the timely delivery of the project based on developers' and 
-                    projects' performance ratings.
-                </p>
+    <!-- Description Box -->
+    <div class="investible-box">
+        <p class="investible-text">
+            A higher score means higher return probabilities and less execution risk in the project. 
+            The investable score measures the risk and return of the property. It measures current 
+            price productivity, which means if it is fairly priced, under-priced, or an overpriced 
+            property. And what are the property's prospects for growth and future price appreciation, 
+            based on how the future infrastructure connectivity in the economy influences the property? 
+            It also measures the execution risk in the property that represents the probabilities of 
+            delay and defaults in the timely delivery of the project based on developers' and 
+            projects' performance ratings.
+        </p>
 
-                <!-- Button with Icon -->
-                <button class="investible-btn">
-                    <img src="./Contact images/Button 3.png" alt="">
-                </button>
-            </div>
+        <!-- Button with Icon -->
+        <button class="investible-btn">
+            <img src="./Contact images/Button 3.png" alt="">
+        </button>
+    </div>
 
-        </div>
+</div>
+
 
  <!-- .......................................Hover-Page......................................... -->
 
@@ -160,7 +215,7 @@
             
     <!-- Left Chart Section -->
     <div class="chart-box col-md-7">
-        <img class="info-image" src="./Contact images/Group 1000010522.png" alt="">
+        <img class="info-image" src="./Contact images/Group 1000010522.svg" alt="">
     </div>
 
     <!-- Right Information Section -->
@@ -194,6 +249,7 @@
 
 </div>
 
+
  <!-- .....................................Graph-2 Page................................................... -->
 
  <div class="main-graph-box-container">
@@ -205,10 +261,12 @@
         <p class="col graph-box-para5">Scatter plot of FFP vs execution score</p>
     </div>
     <div class="row graph-box-2">
-         <img src="./Contact images/image 642.png" alt="">
-         <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores a fuga quisquam quis dolorem quasi impedit tempora at alias nesciunt?Dolores a fuga quisquam quis dolorem quasi impedit tempora at alias nesciunt?tempora at nesciunt?</p>
+         <img src="./Contact images/image 642.svg" alt="">
+         <p >The Distribution of investable Score Highlights the potential and risk of investments,helping investors assess and rank options based on profitability and risk factors for informed descision making</p>
     </div>
 </div>
+
+
 
 <!-- .......................................Sub-Home-page................................................... -->
 
@@ -459,6 +517,7 @@
 </div>
 
 
+
 <!-- .......................................Contact-page................................................... -->
 
 
@@ -532,6 +591,55 @@
 </footer>
 
 
+
+<!-- Script code for the input field -->
+<script>
+    const searchInput = document.getElementById("searchInput");
+ const iconContainer = document.getElementById("iconContainer");
+ const suggestionsBox = document.getElementById("suggestionsBox");
+ const propertyDetails = document.getElementById("propertyDetails");
+
+ // Predefined suggestions (Only these will be allowed)
+ const suggestions = [
+     "Teacher’s Colony, HSR Sector 5, Bengaluru, Karnataka, India"
+ ];
+
+ // Show dropdown only when a valid suggestion is typed
+ searchInput.addEventListener("input", function () {
+     let inputValue = searchInput.value.trim().toLowerCase();
+
+     // Check if input matches any suggestion
+     let matchedSuggestions = suggestions.filter(suggestion =>
+         suggestion.toLowerCase().startsWith(inputValue)
+     );
+
+     if (matchedSuggestions.length > 0) {
+         iconContainer.innerHTML = '<div class="plus-icon"><i class="bi bi-arrow-right"></i></div>';
+         suggestionsBox.innerHTML = matchedSuggestions
+             .map(suggestion => `<div class="suggestion-item">${suggestion}</div>`)
+             .join(""); // Update the dropdown with matching results
+         suggestionsBox.style.display = "block"; // Show suggestions
+
+         // Re-attach click event to new suggestion items
+         document.querySelectorAll(".suggestion-item").forEach(item => {
+             item.addEventListener("click", function () {
+                 searchInput.value = this.innerText;
+                 suggestionsBox.style.display = "none"; // Hide suggestions
+                 showDetails(); // Show property details
+             });
+         });
+     } else {
+         iconContainer.innerHTML = '<i class="bi bi-search search-icon"></i>';
+         suggestionsBox.style.display = "none"; // Hide dropdown if no match
+         propertyDetails.style.display = "none"; // Hide property details
+     }
+ });
+
+ // Function to show property details
+ function showDetails() {
+     propertyDetails.style.display = "block";
+ }
+ </script>
 
 
 
